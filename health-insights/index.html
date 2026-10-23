@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Health Insights</title>
+  <meta name="description" content="Health Insights turns my own Google Health data into weekly and monthly health reports.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <nav><a href="privacy.html">Privacy policy</a></nav>
+
+  <h1>Health Insights</h1>
+  <p class="lede">A personal tool that turns my own Google Health data into a weekly and a monthly health report.</p>
+
+  <h2>What it does</h2>
+  <p>I track my weight, activity and food with a Pixel Watch, Google Health and MyFitnessPal (which syncs my food log to
+    Google Health through Health Connect). Health Insights reads that data from the Google Health API and builds two
+    reports for me:</p>
+  <ul>
+    <li><strong>Weekly report</strong>: this week against last week and the four weeks before. It covers trend weight,
+      rate of weight change, calorie intake, protein, steps, active minutes, resting heart rate and heart-rate variability.</li>
+    <li><strong>Monthly report</strong>: the longer view. It covers total weight change, energy balance (calories eaten
+      against calories burned, estimated from the change in body weight) and a week-by-week table.</li>
+  </ul>
+  <p>The reports are emailed to my own inbox.</p>
+
+  <h2>Who it is for</h2>
+  <p>Health Insights is built and used by me, Dakshesh Gupta, for my own Google account only. It is not a public
+    service: there is no sign-up, no account to create and nothing to install. This page explains what the app does
+    because Google asks every app that uses its Health API to describe itself publicly.</p>
+
+  <h2>What Google Health data it reads, and why</h2>
+  <p>Access is <strong>read-only</strong>. The app never writes, changes or deletes anything in Google Health.</p>
+  <table>
+    <tr><th>Permission</th><th>Data used</th><th>Why</th></tr>
+    <tr><td>Activity and fitness (read-only)</td><td>Daily steps, total calories burned, active minutes</td>
+      <td>Activity trends and the calories-burned side of energy balance</td></tr>
+    <tr><td>Health metrics and measurements (read-only)</td><td>Body weight, daily resting heart rate, daily heart-rate variability</td>
+      <td>Weight trend and rate of change; recovery trends</td></tr>
+    <tr><td>Nutrition (read-only)</td><td>Food log entries: calories, protein, carbohydrate, fat</td>
+      <td>Calorie intake and protein against targets</td></tr>
+  </table>
+  <p>It does not request location, sleep, ECG, profile or any other Google Health data.</p>
+
+  <h2>How it handles the data</h2>
+  <ul>
+    <li>It runs on my own computer. There is no server and no cloud database.</li>
+    <li>Data is downloaded over HTTPS and kept in files on an encrypted disk.</li>
+    <li>The data is never sold, never used for advertising and never shared beyond what the
+      <a href="privacy.html">privacy policy</a> describes.</li>
+  </ul>
+
+  <p class="note">The use of information received from Google Health API will adhere to the
+    <a href="https://developers.google.com/health/policies/health-api-developer-user-data-policy">Google Health API
+    Developer and User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Privacy and contact</h2>
+  <p>Read the full <a href="privacy.html">privacy policy</a>. Questions: <a href="mailto:awesomedakshesh@gmail.com">awesomedakshesh@gmail.com</a>.</p>
+
+  <footer>Health Insights · Dakshesh Gupta · <a href="privacy.html">Privacy policy</a></footer>
+</main>
+</body>
+</html>
